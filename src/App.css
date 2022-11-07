@@ -1,0 +1,33 @@
+.footer {
+  background-color: #273440;
+  text-align: center;
+  color: #f0f0f0;
+  margin-top: 10px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.footer a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: bisque;
+}
+
+.rectangulo {
+  width: 100%;
+  height: 300px;
+}
+
+.iconCart {
+  height: 30px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.iconCart:hover {
+  color: red;
+  transition: 0.3s;
+}
