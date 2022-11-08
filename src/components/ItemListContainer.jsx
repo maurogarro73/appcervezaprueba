@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
-import { Link, useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import { productosHC } from '../data/data.js';
+import ItemList from './ItemList.jsx';
 
 export default function ItemListContainer() {
   const { idcategory } = useParams();
@@ -23,19 +24,5 @@ export default function ItemListContainer() {
     });
   }, [idcategory]);
 
-  return (
-    <>
-      <div>
-        {!productos.length && 'Loading...'}
-        {productos.map((cerveza) => (
-          <div key={cerveza.id}>
-            <h2>{cerveza.nombre}</h2>
-            <p>Precio: ${cerveza.precio}</p>
-            <p>Cerveza {cerveza.category}</p>
-            <Link to={'/item/' + cerveza.id}>IR AL ITEM</Link>
-          </div>
-        ))}
-      </div>
-    </>
-  );
+  return <ItemList productos={productos} />;
 }

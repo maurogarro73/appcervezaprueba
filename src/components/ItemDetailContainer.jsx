@@ -1,7 +1,7 @@
-import React, { useState, useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
-import Spinner from 'react-bootstrap/Spinner';
 import { productosHC } from '../data/data.js';
+import ItemDetail from './ItemDetail.jsx';
 
 export default function ItemDetailContainer() {
   const { iditem } = useParams();
@@ -22,22 +22,7 @@ export default function ItemDetailContainer() {
 
   return (
     <div>
-      <>
-        {producto.id ? (
-          <>
-            <div>
-              <h3>Nombre: {producto.nombre}</h3>
-              <p>id: {producto.id}</p>
-              <p>Precio: {producto.precio}</p>
-              <p>Cerveza: {producto.category}</p>
-            </div>
-          </>
-        ) : (
-          <Spinner animation="border" role="status">
-            <span className="visually-hidden">Loading...</span>
-          </Spinner>
-        )}
-      </>
+      <ItemDetail producto={producto} />
     </div>
   );
 }
