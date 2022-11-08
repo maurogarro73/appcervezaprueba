@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams } from 'react-router-dom';
+import { Link, useParams } from 'react-router-dom';
 
 export default function ItemListContainer() {
   const { idcategory } = useParams();
@@ -70,6 +70,7 @@ export default function ItemListContainer() {
             <h2>{cerveza.nombre}</h2>
             <p>Precio: ${cerveza.precio}</p>
             <p>Cerveza {cerveza.category}</p>
+            <Link to={'/item/' + cerveza.id}>IR AL ITEM</Link>
           </div>
         ))}
       </div>
