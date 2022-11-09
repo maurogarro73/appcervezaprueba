@@ -1,6 +1,6 @@
 .counter {
-  width: fit-content;
-  background-color: gold;
+  width: 90%;
+  background-color: #ddd;
   margin: auto;
   padding: 1rem;
   text-align: center;
@@ -8,4 +8,12 @@
 
 .counter span {
   padding: 10px;
+}
+
+.btnAdd {
+  padding: 5px;
+  border-radius: 10px;
+  border-color: n;
+  margin-top: 5px;
+  background-color: rgb(153, 250, 89);
 }

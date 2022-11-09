@@ -28,6 +28,7 @@ export default function ItemCount({ inicial, stock, onAdd }) {
         </button>
         <div>
           <button
+            className="btnAdd"
             disabled={stock <= 0}
             onClick={() => {
               onAdd(count);

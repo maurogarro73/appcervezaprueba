@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom';
 export default function Item({ cerveza }) {
   return (
     <>
-      <Card style={{ width: '18rem' }} className="m-2 mt-5">
+      <Card style={{ width: '18rem' }} className="m-2 mt-5" key={cerveza.id}>
         <Card.Img variant="top" src={cerveza.img} />
         <Card.Body>
           <Card.Title>{cerveza.nombre}</Card.Title>

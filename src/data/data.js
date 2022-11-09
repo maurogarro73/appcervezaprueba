@@ -12,6 +12,7 @@ export const productosHC = [
     precio: 3750,
     category: 'rubia',
     img: cervHeineken,
+    stock: 5,
   },
   {
     id: 2,
@@ -19,6 +20,7 @@ export const productosHC = [
     precio: 2440,
     category: 'rubia',
     img: cervBudweiser,
+    stock: 5,
   },
   {
     id: 3,
@@ -26,6 +28,7 @@ export const productosHC = [
     precio: 5904,
     category: 'roja',
     img: cervAndes,
+    stock: 5,
   },
   {
     id: 4,
@@ -33,6 +36,7 @@ export const productosHC = [
     precio: 3600,
     category: 'roja',
     img: cervSchneider,
+    stock: 5,
   },
   {
     id: 5,
@@ -40,6 +44,7 @@ export const productosHC = [
     precio: 2112,
     category: 'negra',
     img: cervQuilmesStout,
+    stock: 5,
   },
   {
     id: 6,
@@ -47,5 +52,6 @@ export const productosHC = [
     precio: 2320,
     category: 'negra',
     img: cervPatAmLA,
+    stock: 5,
   },
 ];
