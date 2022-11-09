@@ -8,9 +8,6 @@ import CartWidget from './CartWidget';
 
 const page = [
   { label: 'Home', link: '/' },
-  { label: 'Productos', link: '/productos' },
-  { label: 'Checkout', link: '/checkout' },
-  { label: 'Contacto', link: '/contacto' },
   { label: 'Cervezas Rubia', link: '/category/rubia' },
   { label: 'Cervezas Roja', link: '/category/roja' },
   { label: 'Cervezas Negra', link: '/category/negra' },

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { productosHC } from '../data/data.js';
 import ItemList from './ItemList.jsx';
+import Container from 'react-bootstrap/Container';
 
 export default function ItemListContainer() {
   const { idcategory } = useParams();
@@ -24,5 +25,12 @@ export default function ItemListContainer() {
     });
   }, [idcategory]);
 
-  return <ItemList productos={productos} />;
+  return (
+    <>
+      <Container className="mt-5 text-center">
+        <h2>Algunas de nuestras cervezas</h2>
+        <ItemList productos={productos} />
+      </Container>
+    </>
+  );
 }
